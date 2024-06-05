@@ -1,0 +1,257 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/x-icon" href="/static/capture.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clothsgo© (lowest prices for shopping items)</title>
+   
+
+    <style>
+         .siren-effect {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: siren 2s infinite alternate;
+    }
+
+    @keyframes siren {
+        0% {
+            background-color: red;
+        }
+        50% {
+            background-color: blue;
+        }
+        100% {
+            background-color: red;
+        }
+    }
+        @keyframes color-function {
+    0% {
+        background-color: red;
+        height: 100px;
+        border-radius: 50%;
+    }
+    20% {
+        background-color: yellow;
+        height: 100px;
+        border-radius: 50%;
+    }
+    40% {
+        background-color: blue;
+        height: 100px;
+        border-radius: 50%;
+    }
+    60% {
+        background-color: green;
+        height: 100px;
+        border-radius: 50%;
+    }
+    80% {
+        background-color: red;
+        height: 150px;
+        border-radius: 0%;
+    }
+    100% {
+        background-color: red;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+        body {
+            background-color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .text {
+            font-size: 24px;
+            transition: opacity 0.5s ease;
+        }
+        .hidden {
+            opacity: 0;
+            background-color: #ff4136;
+        }
+        .text {
+            background-color: #f00;
+            font-weight: bold;
+        }
+        :root {
+            --primary-color: #0074d9;
+            --secondary-color: #ff4136;
+            --background-color: #f5f5f5;
+        }
+        .item-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .item-off {
+            color: #ff4136;
+        }
+        .search-bar {
+            margin: 20px;
+        }
+        .item-image {
+            width: 100%;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            border: 0;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: var(--secondary-color);
+        }
+        mark {
+            color: #ff4136;
+        }
+        h2 {
+            color: #ff4136;
+            background-color: gold;
+        }
+        h1 {
+            color: #15ff00;
+        }
+        h3{
+            background-color: blue;
+            color: #15ff00;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+            </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="text" id="toShow">cheap + high end + trust worthy =</div>
+        <div class="text hidden" id="toHide">clothsgo©===></div>
+        <h1>GET BEST OFFERS NOW!</h1>
+        
+    </div>
+    <script>
+        const theDelay = 3;
+        function toggleText() {
+            const a = document.getElementById("toShow");
+            const b = document.getElementById("toHide");
+            a.classList.toggle("hidden");
+            b.classList.toggle("hidden");
+        }
+        setTimeout(toggleText, theDelay * 500);
+    </script>
+    <h1>CLOTHS</h1>
+    <h2>GO-></h2>
+    <h3>contact us for . gmail:clothsgoofficial@gmail.com</h3>
+    <body>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <div id="searchResults"></div>
+    
+        <script>
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+    
+            // Function to search within <p> tags
+            function searchWithinPTags() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const paragraphs = document.getElementsByTagName('p');
+    
+                let found = false;
+                let resultHTML = '';
+    
+                for (const p of paragraphs) {
+                    const text = p.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        resultHTML += `<p>${p.textContent}</p>`;
+                        found = true;
+                    }
+                }
+    
+                if (found) {
+                    searchResults.innerHTML = resultHTML;
+                } else {
+                    searchResults.innerHTML = '<p>Nothing found.</p>';
+                }
+            }
+    
+            // Listen for input changes
+            searchInput.addEventListener('input', searchWithinPTags);
+        </script>
+    </body>
+    </div>
+    <div class="item-section">
+        <div class="item-image"><img src="download.jpg" alt=""></div>
+        <h2>clothsgo © Subscription</h2>
+        <p>Get insane offers for 1 month and get your own custom code.</p>
+        <p>Price: 100,000 تومان</p>
+        <span class="item-off">Off 55%</span>
+        <span>Unavailable</span>
+    </div>
+
+    <div class="item-section">
+        <div class="item-image"><img src="capture.png" alt=""></div>
+        <h2>T-Shirt</h2> <h2>BEST SELLER</h2>
+        <p><mark>Description: Sport, for men, white plain, cheap, large</mark></p>
+        <p><mark>Price: 400,000 تومان</mark></p>
+        <span>50% off</span>
+        <p><a href="payform.html">buy</a></p>
+    </div>
+
+    <div class="item-section">
+        <div class="item-image"><img src="capture2.png" alt=""></div>
+        <h2>Trousers</h2>
+        <p><mark>Description: Formal, black, cheap, XL</mark></p>
+        <p><mark>Price: 100,000 تومان</mark></p>
+        <span><a href="payform.html">buy</a></span>
+    </div>
+    <div class="item-section">
+        <div class="item-image"><img src="capture3.png" alt=""></div>
+        <h2>hoodie</h2>
+        <p><mark>Description: casual, black, cheap, XL</mark></p>
+        <p><mark>Price: 400,000 تومان</mark></p>
+        <span><a href="payform.html">buy</a></span>
+
+    </div>
+
+    <div class="item-section">
+        <div class="item-image"><img src="capture4.png" alt=""></div>
+        <h2>پیراهن مردانه</h2>
+        <p><mark>Description: casual, striped, cheap, XL</mark></p>
+        <p><mark>Price: 400,000 تومان</mark></p>
+        <span><a href="payform.html">buy</a></span>
+        <p>%90 off</p>
+        
+    </div>
+
+    <div class="item-section">
+        <div class="item-image"><img src="capture6.png" alt=""></div>
+        <h2>jacket</h2>
+        <p><mark>Description: casual, cheap, XL</mark></p>
+        <p><mark>Price: 1,000,000 تومان</mark></p>
+        <span><a href="payform.html">buy</a></span>
+        <p>%90 off</p>
+</body>
+    <!-- Rest of your item sections go here -->
+</body>
+</html>
+
